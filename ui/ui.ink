@@ -1,8 +1,8 @@
-if (_UI_I_) { retn }
-_UI_I_ = 1;
+if (_UI_INK_) { retn }
+_UI_INK_ = 1;
 
 import io
-import "../utils/general.i"
+import "../utils/general.ink"
 
 $string.times = fn (count) {
 	let ret = ""

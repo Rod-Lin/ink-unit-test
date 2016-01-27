@@ -1,7 +1,7 @@
-if (_CONTAINER_I_) { retn }
-_CONTAINER_I_ = 1
+if (_CONTAINER_INK_) { retn }
+_CONTAINER_INK_ = 1
 
-import "general.i"
+import "general.ink"
 
 __Array = Array
 ExArray = fn (args...) {
