@@ -2,4 +2,6 @@
 
 import "ui/ui.ik"
 
-UT_UIUtils::print_split("start");
+using UT_UIUtils
+
+print_split("start");

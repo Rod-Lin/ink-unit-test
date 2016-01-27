@@ -19,8 +19,17 @@ max = fn (args...) {
 
 namespace = {
 	missing: fn (name) {
-		ret = (top this)[name] = fn () { }
+		ret = top[name] = fn () { }
 		delete name
 		ret
+	}
+}
+
+using = {
+	missing: fn (name) {
+		top this[name]::(let each { | key, value |
+			top[key] = value
+		})
+		null
 	}
 }
