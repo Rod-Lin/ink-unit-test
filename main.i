@@ -1,6 +1,6 @@
 #! /usr/bin/ink
 
-import "ui/ui.ik"
+import "ui/ui.i"
 
 using UT_UIUtils
 

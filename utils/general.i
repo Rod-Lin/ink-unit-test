@@ -1,5 +1,5 @@
-if (_GENERAL_IK_) { retn }
-_GENERAL_IK_ = 1
+if (_GENERAL_I_) { retn }
+_GENERAL_I_ = 1
 
 for = inl (init, &cond, &iterate, block) {
 	block.'continue' = iterate;
