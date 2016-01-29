@@ -27,7 +27,6 @@ using = {
 	missing: fn (name) {
 		top[name]::(let each { | key, value |
 			if (key != "this" && key != "base" && key != "let" && key != "each") {
-				p(key)
 				top[key] = value
 			}
 		})

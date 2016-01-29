@@ -61,7 +61,6 @@ cast_native_array = fn (narr) {
 	narr.each { | val |
 		ret.push(val);
 	}
-
 	ret
 }
 
