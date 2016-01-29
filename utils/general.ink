@@ -19,17 +19,26 @@ max = fn (args...) {
 
 namespace = {
 	missing: fn (name) {
-		ret = top[name] = fn () { }
-		delete name
-		ret
+		top[name] = fn () { fn () {} } ()
 	}
 }
 
 using = {
 	missing: fn (name) {
-		top this[name]::(let each { | key, value |
-			top[key] = value
+		top[name]::(let each { | key, value |
+			if (key != "this" && key != "base" && key != "let" && key != "each") {
+				p(key)
+				top[key] = value
+			}
 		})
 		null
 	}
+}
+
+$string.times = fn (count) {
+	let ret = ""
+	for (let i = 0, i < count, i++) {
+		ret = ret + base
+	}
+	ret
 }

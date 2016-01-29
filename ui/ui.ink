@@ -4,14 +4,6 @@ _UI_INK_ = 1;
 import io
 import "../utils/general.ink"
 
-$string.times = fn (count) {
-	let ret = ""
-	for (let i = 0, i < count, i++) {
-		ret = ret + base
-	}
-	ret
-}
-
 namespace UT_UIUtils::(
 	let std_puts = fn (str) {
 		stdout.puts(str.to_str())

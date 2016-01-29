@@ -56,6 +56,14 @@ ExArray = fn (args...) {
 	}
 }
 Array = ExArray;
+cast_native_array = fn (narr) {
+	ret = new Array();
+	narr.each { | val |
+		ret.push(val);
+	}
+
+	ret
+}
 
 Stack = fn () {
 	this = new Array()
