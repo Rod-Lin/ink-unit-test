@@ -6,14 +6,20 @@ import "../utils/container.ink"
 import "../utils/general.ink"
 
 namespace UT_Engine::(
-	let TestUnit = fn (enter, result) {
+	let TestUnit = fn (enter, result, res_fp) {
 		this.enter = enter
 		this.result = result
+		this.res_fp = res_fp
 		this.run = fn (argv...) {
 			base.enter with argv
 		}
 		this.check = fn (result) {
 			base.result == result
+		}
+		this.dispose = fn () {
+			if (base.res_fp) {
+				base.res_fp.close();
+			}
 		}
 	},
 	let TestEngine = fn () {
@@ -34,6 +40,19 @@ namespace UT_Engine::(
 				file_remove(tmp_file_name)
 				ret
 			})
+		}
+		this.dry_run = fn (tmp_folder_path) {
+			let i = 1;
+			cast_native_array(base.test_queue.each { | val |
+				val.run(val.res_fp)
+				ret
+			})
+			null
+		}
+		this.dispose = fn () {
+			base.test_queue.each { | val |
+				val.dispose()
+			}
 		}
 	}
 )
