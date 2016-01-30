@@ -19,7 +19,7 @@ test_engine = new TestEngine()
 
 ARGV.each { | val |
 	if (val == "--dry-run") {
-		auto is_dry = 1;
+		is_dry = 1;
 	}
 }
 
