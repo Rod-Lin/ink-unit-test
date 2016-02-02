@@ -8,40 +8,98 @@ import "utils/engine.ink"
 using UT_UIUtils
 using UT_Engine
 
-print_split("start");
-
-res_dir = "res"
-tmp_dir = "tmp"
+res_dir = new Directory("res")
+tmp_dir = new Directory("tmp")
+test_dir = new Directory("tests");
 i = 1
 dest = ""
 is_dry = 0
 test_engine = new TestEngine()
 
+print_split("preparing");
+
+ARGV.remove(0)
 ARGV.each { | val |
 	if (val == "--dry-run") {
+		print_split("dry-run mode");
 		is_dry = 1;
 	}
 }
 
-while (file_exist(dest = "tests/test" + i + ".ink")) {
-	import dest
-	std_putln("Find test: " + dest);
-
-	if (!is_dry) {
-		res_file = new File(res_dir + "/test" + i + ".res", "r")
-		test_engine.push_test(new TestUnit(auto["$test" + i + "_enter"], res_file.read()));
-		res_file.close()
+if (!res_dir.exist()) {
+	if (is_dry) {
+		res_dir.create()
 	} else {
-		res_file = new File(res_dir + "/test" + i + ".res", "w+")
-		test_engine.push_test(new TestUnit(auto["$test" + i + "_enter"], "", res_file));
+		p("No result directory found, please name it \'res\'");
+		exit
 	}
-	i++
 }
+
+if (!test_dir.exist()) {
+	p("No test directory found, please name it \'tests\'");
+	exit
+}
+
+@exit = fn (v) {
+	if (tmp_dir.exist()) {
+		tmp_dir.remove();
+	}
+}
+
+if (!tmp_dir.exist()) {
+	tmp_dir.create();
+}
+
+print_split("checking tests");
+
+test_dir.each { | val |
+	if (val == "." || val == "..") {
+		continue;
+	}
+
+	std_putln("Find test: " + val);
+
+	import test_dir.path() + "/" + val
+
+	if (is_dry) {
+		let out_file = new File(let tmp_path = (res_dir.path() + "/" + val + ".out"), "w+");
+		if (out_file) {
+			if (typename(let tmp_begin_f = auto["$test_begin"]) != "function") {
+				p("Failed to find \'$test_begin\' function in test file \'" + val + "\'");
+				continue;
+			} else {
+				test_engine.push_test(new TestUnit(val, tmp_begin_f, "", out_file));
+			}
+		} else {
+			p("Cannot create output file \'" + tmp_path + "\'");
+		}
+	} else {
+		res_file = new File(let tmp_path = (res_dir.path() + "/" + val + ".out"), "r")
+
+		if (res_file) {
+			if (typename(let tmp_begin_f = auto["$test_begin"]) != "function") {
+				p("Failed to find \'$test_begin\' function in test file \'" + val + "\'");
+				continue;
+			} else {
+				test_engine.push_test(new TestUnit(val, tmp_begin_f, res_file.read()));
+			}
+			res_file.close()
+		} else {
+			p("Cannot open result file \'" + tmp_path + "\'");
+		}
+	}
+}
+
+print_split("tests begin");
 
 if (is_dry) {
-	test_engine.dry_run(tmp_dir)
+	test_engine.dry_run()
 } else {
-	test_engine.run(tmp_dir).p()
+	test_engine.run(tmp_dir.path())
 }
 
+print_split("tests end");
+
 test_engine.dispose();
+
+exit

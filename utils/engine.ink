@@ -4,9 +4,11 @@ _ENGINE_INK_ = 1
 import io
 import "../utils/container.ink"
 import "../utils/general.ink"
+import "../ui/ui.ink"
 
 namespace UT_Engine::(
-	let TestUnit = fn (enter, result, res_fp) {
+	let TestUnit = fn (name, enter, result, res_fp) {
+		this.name = name
 		this.enter = enter
 		this.result = result
 		this.res_fp = res_fp
@@ -33,15 +35,23 @@ namespace UT_Engine::(
 				let tmp_file_name = tmp_folder_path + "/test_" + (i++)
 				let res_fp = new File(tmp_file_name, "w+");
 
+				UT_UIUtils::std_puts("test: " + val.name + " --- ");
+
 				val.run(res_fp)
 				ret = val.check(res_fp.read())
 				res_fp.close()
+
+				if (ret) {
+					UT_UIUtils::std_puts("OK\n");
+				} else {
+					UT_UIUtils::std_puts("Failed\n");
+				}
 
 				file_remove(tmp_file_name)
 				ret
 			})
 		}
-		this.dry_run = fn (tmp_folder_path) {
+		this.dry_run = fn () {
 			let i = 1;
 			cast_native_array(base.test_queue.each { | val |
 				val.run(val.res_fp)
