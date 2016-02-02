@@ -44,6 +44,7 @@ if (!test_dir.exist()) {
 	if (tmp_dir.exist()) {
 		tmp_dir.remove();
 	}
+	exit
 }
 
 if (!tmp_dir.exist()) {
