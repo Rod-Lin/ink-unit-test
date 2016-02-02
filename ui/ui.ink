@@ -1,4 +1,4 @@
-if (_UI_INK_) { retn }
+if (_UI_INK_) { exit }
 _UI_INK_ = 1;
 
 import io

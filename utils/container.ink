@@ -1,4 +1,4 @@
-if (_CONTAINER_INK_) { retn }
+if (_CONTAINER_INK_) { exit }
 _CONTAINER_INK_ = 1
 
 import "general.ink"

@@ -1,4 +1,4 @@
-if (_ENGINE_INK_) { retn }
+if (_ENGINE_INK_) { exit }
 _ENGINE_INK_ = 1
 
 import io

@@ -1,8 +1,8 @@
-if (_GENERAL_INK_) { retn }
+if (_GENERAL_INK_) { exit }
 _GENERAL_INK_ = 1
 
 for = inl (init, &cond, &iterate, block) {
-	block.'continue' = iterate;
+	block@continue = iterate;
 	while (cond()) {
 		block();
 		iterate();
