@@ -6,7 +6,7 @@ $test_begin = fn (out) {
  *   1. Basic operators like +, -, *, /, %, etc.
  *   2. ceil, floor, round method
  *
- * Testing Types: Numeric and Big Numeric
+ * Testing Types: Numeric
  */
 
 	let a = 20.123
@@ -16,9 +16,6 @@ $test_begin = fn (out) {
 	let d = 4.5
 	let e = 4.50001
 	let f = 4.49999
-
-	let g = bignum("123.000000000000000000000000000000000000000000000000000000001")
-	let h = bignum("000.000000000000000000000000000000000000000000000000000000002")
 
 	let res = new Array();
 
@@ -34,8 +31,6 @@ $test_begin = fn (out) {
 	res.push (d.floor())
 	res.push (e.round())
 	res.push (f.round())
-
-	res.push ((g - h).to_str())
 
 	let i = 1
 	res.each { | v |
