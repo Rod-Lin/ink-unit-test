@@ -1,4 +1,4 @@
-$test_begin = fn (out) {
+$test_begin = fn (out) do
 /**
  * TEST: numeric1.ink
  *
@@ -33,8 +33,8 @@ $test_begin = fn (out) {
 	res.push (f.round())
 
 	let i = 1
-	res.each { | v |
+	res.each do | v |
 		out.puts("res" + i + ": " + v + "\n")
 		i++
-	}
-}
+	end
+end

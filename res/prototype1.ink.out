@@ -1,0 +1,25 @@
+I'm a in TypeA
+This is type TypeB
+	slot: prototype
+	slot: type
+	slot: say
+	slot: b
+	slot: p
+	say: chuck, chuck chuck
+
+This is type TypeA
+	slot: prototype
+	slot: type
+	slot: say
+	slot: a
+	slot: p
+	slot: base
+	say: moo, moo moo
+
+This is type Ancestor
+	slot: type
+	slot: say
+	slot: ancestors
+	slot: base
+	slot: each
+	say: woof, woof woof
