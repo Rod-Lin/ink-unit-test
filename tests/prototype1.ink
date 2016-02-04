@@ -7,9 +7,6 @@ $test_begin = fn (out) do
  *
  * Testing Types: Object
  */
-	out.putln = fn (str) {
-		base.puts(str + "\n");
-	}
 
 	let Ancestor = fn () {
 		this.type = "Ancestor"

@@ -6,6 +6,10 @@ import "../utils/container.ink"
 import "../utils/general.ink"
 import "../ui/ui.ink"
 
+'$io.file.File'.putln = fn (str) {
+	base.puts(str.to_str() + "\n");
+}
+
 namespace UT_Engine::(
 	let TestUnit = fn (name, enter, result, res_fp) {
 		this.name = name
@@ -35,12 +39,11 @@ namespace UT_Engine::(
 				let tmp_file_name = tmp_folder_path + "/test_" + (i++)
 				let res_fp = new File(tmp_file_name, "w+");
 
-				UT_UIUtils::std_puts("test: " + val.name + " --- ");
-
 				val.run(res_fp)
 				ret = val.check(res_fp.read())
 				res_fp.close()
 
+				UT_UIUtils::std_puts("test: " + val.name + " --- ");
 				if (ret) {
 					UT_UIUtils::std_puts("OK\n");
 				} else {

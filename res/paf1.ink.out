@@ -1,0 +1,16 @@
+36
+11
+from each: 1
+from each: 2
+from each: 3
+when x = 0, formular1 = 1
+when x = 1, formular1 = 3
+when x = 2, formular1 = 5
+when x = 3, formular1 = 7
+when x = 4, formular1 = 9
+when x = 5, formular1 = 11
+when x = 6, formular1 = 13
+when x = 7, formular1 = 15
+when x = 8, formular1 = 17
+when x = 9, formular1 = 19
+test string
