@@ -6,7 +6,7 @@ import "../utils/container.ink"
 import "../utils/general.ink"
 import "../ui/ui.ink"
 
-'$io.file.File'.putln = fn (str) {
+`$io.file.File`.putln = fn (str) {
 	base.puts(str.to_str() + "\n");
 }
 

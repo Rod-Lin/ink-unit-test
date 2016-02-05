@@ -14,7 +14,7 @@ ExArray = fn (args...) {
 		}
 		-1;
 	}
-	this.'==' = fn (a) {
+	this.`==` = fn (a) {
 		if (a.size() != base.size()) {
 			retn 0;
 		}
@@ -26,7 +26,7 @@ ExArray = fn (args...) {
 		1;
 	}
 
-	this.'*' = fn (a) {
+	this.`*` = fn (a) {
 		let ret = new Array();
 		base.each() { | elem1 |
 			a.each() { | elem2 |
