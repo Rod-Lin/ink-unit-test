@@ -7,7 +7,7 @@ $test_begin = fn (out) do
  *
  * Testing Types: Object
  */
-
+	
 	let Ancestor = fn () {
 		this.type = "Ancestor"
 		this.say = fn () { "woof, woof woof" }
@@ -19,7 +19,7 @@ $test_begin = fn (out) do
 			}
 			out.putln("\tsay: " + base.say())
 
-			if (base.prototype) {
+			if (base.prototype.ancestors) {
 				out.putln("")
 				base.prototype.ancestors();
 			}

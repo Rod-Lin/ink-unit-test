@@ -17,9 +17,9 @@ This is type TypeA
 	say: moo, moo moo
 
 This is type Ancestor
+	slot: prototype
 	slot: type
 	slot: say
 	slot: ancestors
 	slot: base
-	slot: each
 	say: woof, woof woof
