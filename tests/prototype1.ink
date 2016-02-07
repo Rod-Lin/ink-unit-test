@@ -7,7 +7,7 @@ $test_begin = fn (out) do
  *
  * Testing Types: Object
  */
-	
+
 	let Ancestor = fn () {
 		this.type = "Ancestor"
 		this.say = fn () { "woof, woof woof" }

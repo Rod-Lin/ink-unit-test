@@ -1,6 +1,5 @@
 I'm a in TypeA
 This is type TypeB
-	slot: prototype
 	slot: type
 	slot: say
 	slot: b
@@ -8,7 +7,6 @@ This is type TypeB
 	say: chuck, chuck chuck
 
 This is type TypeA
-	slot: prototype
 	slot: type
 	slot: say
 	slot: a
@@ -17,7 +15,6 @@ This is type TypeA
 	say: moo, moo moo
 
 This is type Ancestor
-	slot: prototype
 	slot: type
 	slot: say
 	slot: ancestors
