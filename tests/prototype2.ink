@@ -17,8 +17,15 @@ $object.prototype = {
 
 out.putln([].type());
 
-a = []
-b = 10
+a = [1]
+
+fn () {
+	let c = "impossible"
+	a[0] -> c
+	0
+} ()
+
+out.putln(a[0]);
 
 out.putln(null.type())
 
