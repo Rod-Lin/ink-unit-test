@@ -1,9 +1,7 @@
 #! /usr/bin/ink
 
 import io
-import "utils/container.ink"
-import "ui/ui.ink"
-import "utils/engine.ink"
+import "utils/container.ink", "ui/ui.ink", "utils/engine.ink"
 
 using UT_UIUtils
 using UT_Engine
@@ -30,13 +28,13 @@ if (!res_dir.exist()) {
 	if (is_dry) {
 		res_dir.create()
 	} else {
-		p("No result directory found, please name it \'res\'");
+		p("No result directory found, please name it 'res'");
 		exit
 	}
 }
 
 if (!test_dir.exist()) {
-	p("No test directory found, please name it \'tests\'");
+	p("No test directory found, please name it 'tests'");
 	exit
 }
 
@@ -66,27 +64,27 @@ test_dir.each { | val |
 		let out_file = new File(let tmp_path = (res_dir.path() + "/" + val + ".out"), "w+");
 		if (out_file) {
 			if (typename(let tmp_begin_f = auto["$test_begin"]) != "function") {
-				p("Failed to find \'$test_begin\' function in test file \'" + val + "\'");
+				p("Failed to find '$test_begin' function in test file '" + val + "'");
 				continue;
 			} else {
 				test_engine.push_test(new TestUnit(val, tmp_begin_f, "", out_file));
 			}
 		} else {
-			p("Cannot create output file \'" + tmp_path + "\'");
+			p("Cannot create output file '" + tmp_path + "'");
 		}
 	} else {
 		res_file = new File(let tmp_path = (res_dir.path() + "/" + val + ".out"), "r")
 
 		if (res_file) {
 			if (typename(let tmp_begin_f = auto["$test_begin"]) != "function") {
-				p("Failed to find \'$test_begin\' function in test file \'" + val + "\'");
+				p("Failed to find '$test_begin' function in test file '" + val + "'");
 				continue;
 			} else {
 				test_engine.push_test(new TestUnit(val, tmp_begin_f, res_file.read()));
 			}
 			res_file.close()
 		} else {
-			p("Cannot open result file \'" + tmp_path + "\'");
+			p("Cannot open result file '" + tmp_path + "'");
 		}
 	}
 }
