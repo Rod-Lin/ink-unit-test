@@ -8,10 +8,10 @@ $test_begin = fn (out) do
  * Testing Types: Object
  */
 
-$no_proto_object = clone $object
+let $no_proto_object = clone $object
 delete $no_proto_object.prototype
 
-plugin = {
+let plugin = {
 	type: fn () {
 		typename(base)
 	},
@@ -25,7 +25,7 @@ out.putln([].type());
 a = [1]
 
 fn () {
-	let c = "impossible"
+	let c = fn(){}
 	a[0] -> c
 	0
 } ()
@@ -34,7 +34,7 @@ out.putln(a[0]);
 
 out.putln(null.type())
 
-plug_to = {
+let plug_to = {
 	type: fn () {
 		"hacked"
 	},
@@ -52,5 +52,7 @@ plugin.type = fn () {
 }
 
 out.putln(null.type())
+
+!!$object.prototype
 
 end
