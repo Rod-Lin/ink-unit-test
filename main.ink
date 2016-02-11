@@ -49,6 +49,11 @@ if (!tmp_dir.exist()) {
 	tmp_dir.create();
 }
 
+if (!stderr.reopen(res_dir.path() + "/stderr.out", "w+")) {
+	p('Cannot create ' + res_dir.path() + '/stderr.out file');
+	exit
+}
+
 print_split("checking tests");
 
 test_dir.each { | val |
