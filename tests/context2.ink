@@ -11,12 +11,12 @@ $test_begin = fn (out) do
 	let getter("here", macro () { fn () {} })
 
 	$function.to_context = fn (context) {
-		context::(fn (exps) { exps.rebuild() })(base.exp())
+		context::(fn (exps) { exps.rebuild() })(base.exp().to_array())
 		// rebuild in the dest context
 	}
 
 	$function.to_flat = fn () {
-		base.exp()[0]
+		base.exp().to_array()[0]
 	}
 
 	@ = fn (&params...) {
