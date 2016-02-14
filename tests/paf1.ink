@@ -8,6 +8,7 @@ $test_begin = fn (out) do
  * Testing Types: Function
  */
 
+
 	let sum = fn (arg...) {
 		let ret = 0
 		for (let i = 0, i < arg.size(), i++) {

@@ -12,6 +12,7 @@ test_dir = new Directory("tests");
 i = 1
 dest = ""
 is_dry = 0
+is_debug = 0
 test_engine = new TestEngine()
 
 print_split("preparing");
@@ -21,6 +22,9 @@ ARGV.each { | val |
 	if (val == "--dry-run") {
 		print_split("dry-run mode");
 		is_dry = 1;
+	} else if (val == "--debug") {
+		print_split("debug mode");
+		is_debug = 1
 	}
 }
 
@@ -49,9 +53,11 @@ if (!tmp_dir.exist()) {
 	tmp_dir.create();
 }
 
-if (!stderr.reopen(res_dir.path() + "/stderr.out", "w+")) {
-	p('Cannot create ' + res_dir.path() + '/stderr.out file');
-	exit
+if (!is_debug) {
+	if (!stderr.reopen(res_dir.path() + "/stderr.out", "w+")) {
+		p('Cannot create ' + res_dir.path() + '/stderr.out file');
+		exit
+	}
 }
 
 print_split("checking tests");

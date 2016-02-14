@@ -24,11 +24,15 @@ out.putln([].type());
 
 a = [1]
 
-fn () {
-	let c = fn(){}
-	a[0] -> c
-	0
-} ()
+try {
+	fn () {
+		let c = fn(){}
+		a[0] -> c
+		0
+	} ()
+} catch { | e |
+	out.putln(e.msg);
+}
 
 out.putln(a[0]);
 

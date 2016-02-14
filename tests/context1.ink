@@ -9,7 +9,7 @@ $test_begin = fn (out) do
  */
 
 	$function.reconstruct = fn (context) {
-		context::(fn (exps) { exps.rebuild() })(base.exp())
+		context::(fn (exps) { exps.rebuild() })(base.exp().to_array())
 		// rebuild in the dest context
 	}
 

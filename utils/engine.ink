@@ -39,7 +39,14 @@ namespace UT_Engine::(
 				let tmp_file_name = tmp_folder_path + "/test_" + (i++)
 				let res_fp = new File(tmp_file_name, "w+");
 
-				val.run(res_fp)
+				try {
+					val.run(res_fp)
+				} catch { | e |
+					UT_UIUtils::std_puts("test: " + val.name + " --- Error\n");
+					UT_UIUtils::std_puts("  error message: " + e.file_name + ": line " + e.lineno + ": " + e.msg + "\n");
+					file_remove(tmp_file_name)
+					continue 0
+				}
 				ret = val.check(res_fp.read())
 				res_fp.close()
 
