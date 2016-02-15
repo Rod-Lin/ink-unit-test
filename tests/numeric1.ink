@@ -17,6 +17,11 @@ $test_begin = fn (out) do
 	let e = 4.50001
 	let f = 4.49999
 
+	let g = 4.99e10
+	let h = numval("2e0.5")
+	let i = 4E-10
+	let j = 5e+10
+
 	let res = new Array();
 
 	res.push (a + b)
@@ -26,6 +31,11 @@ $test_begin = fn (out) do
 	res.push (a % b)
 	res.push (-a)
 	res.push (-b)
+
+	res.push (g)
+	res.push (h)
+	res.push (i)
+	res.push (j)
 
 	res.push (c.ceil())
 	res.push (d.floor())
