@@ -32,6 +32,7 @@ try {
 	} ()
 } catch { | e |
 	out.putln(e.msg);
+	//0
 }
 
 out.putln(a[0]);

@@ -11,12 +11,10 @@ This is type TypeA
 	slot: say
 	slot: a
 	slot: p
-	slot: base
 	say: moo, moo moo
 
 This is type Ancestor
 	slot: type
 	slot: say
 	slot: ancestors
-	slot: base
 	say: woof, woof woof

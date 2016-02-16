@@ -1,7 +1,7 @@
-[1;34m***NOTE***[m /home/lancelot/Desktop/ink-unit-test/tests/paf1.ink: line 29: Method '[]' of object of type <array> fallthrough to that of type <object>
+[1;34m***NOTE***[m /home/lancelot/Desktop/ink-unit-test/tests/paf1.ink: line 28: Method '[]' of object of type <array> fallthrough to that of type <object>
 [1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 12: Getting slot 'b' of undefined value
 ***INK EXCEPTION(strict mode)*** rising from:
-    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 18: object@0xa799110 of type 'function' in slot 'this', function attr: [
+    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 18: object@0x2478670 of type 'function' in slot 'error_func', function attr: [
         is native: false
         is inline: false
         is generator: false
@@ -9,7 +9,7 @@
         parameter: ()
         interrupt signal trap mask: retn | continue | break
     ]
-    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0xa79aca0 of type 'function' in anonymous slot, function attr: [
+    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0x2473760 of type 'function' in anonymous slot, function attr: [
         is native: false
         is inline: true
         is generator: false
@@ -17,7 +17,7 @@
         parameter: ()
         interrupt signal trap mask: 
     ]
-    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0x5d6b480 of type 'function' in slot 'try', function attr: [
+    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0x23d6070 of type 'function' in slot 'try', function attr: [
         is native: true
         is inline: true
         is generator: false
@@ -25,7 +25,7 @@
         parameter: ()
         interrupt signal trap mask: 
     ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 21: object@0x60bbde0 of type 'function' in slot 'this', function attr: [
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 21: object@0x2438700 of type 'function' in slot 'enter', function attr: [
         is native: false
         is inline: false
         is generator: false
@@ -33,7 +33,7 @@
         parameter: (*out)
         interrupt signal trap mask: retn | continue | break
     ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 44: object@0x60d5950 of type 'function' in slot 'this', function attr: [
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 44: object@0x24496f0 of type 'function' in slot 'run', function attr: [
         is native: false
         is inline: false
         is generator: false
@@ -41,7 +41,7 @@
         parameter: (*argv...)
         interrupt signal trap mask: retn | continue | break
     ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 49: object@0xa795270 of type 'function' in anonymous slot, function attr: [
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 49: object@0x24a02f0 of type 'function' in anonymous slot, function attr: [
         is native: false
         is inline: true
         is generator: false
@@ -49,7 +49,7 @@
         parameter: ()
         interrupt signal trap mask: 
     ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 49: object@0x5d6b480 of type 'function' in slot 'try', function attr: [
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 49: object@0x23d6070 of type 'function' in slot 'try', function attr: [
         is native: true
         is inline: true
         is generator: false
@@ -57,7 +57,7 @@
         parameter: ()
         interrupt signal trap mask: 
     ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0x782e5d0 of type 'function' in anonymous slot, function attr: [
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0x245f2d0 of type 'function' in anonymous slot, function attr: [
         is native: false
         is inline: true
         is generator: false
@@ -65,7 +65,7 @@
         parameter: (*val)
         interrupt signal trap mask: 
     ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 62: object@0x782dd10 of type 'function' in slot 'this', function attr: [
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 62: object@0x2460c70 of type 'function' in slot 'each', function attr: [
         is native: true
         is inline: false
         is generator: false
@@ -73,7 +73,7 @@
         parameter: ()
         interrupt signal trap mask: retn | continue | break
     ]
-    ./main.ink: line 110: object@0x5edb450 of type 'function' in slot 'this', function attr: [
+    ./main.ink: line 110: object@0x241ff00 of type 'function' in slot 'run', function attr: [
         is native: false
         is inline: false
         is generator: false
@@ -81,7 +81,7 @@
         parameter: (*tmp_folder_path)
         interrupt signal trap mask: retn | continue | break
     ]
-    ./main.ink: line 110: object@0x782a300 of type 'function' in anonymous slot, function attr: [
+    ./main.ink: line 110: object@0x245b230 of type 'function' in anonymous slot, function attr: [
         is native: false
         is inline: true
         is generator: false
@@ -89,7 +89,7 @@
         parameter: ()
         interrupt signal trap mask: 
     ]
-    ./main.ink: line 110: object@0x5d6a850 of type 'function' in slot 'if', function attr: [
+    ./main.ink: line 110: object@0x23d5aa0 of type 'function' in slot 'if', function attr: [
         is native: true
         is inline: true
         is generator: false
@@ -97,10 +97,10 @@
         parameter: ()
         interrupt signal trap mask: 
     ]
-    <root engine>: line -1: object@0x5d14390 of type 'context' in slot 'base'
+    <root engine>: line -1: object@0x23b6120 of type 'context' in slot 'base'
 [1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 29: Unreachable bonding detected, breaking
 ***INK EXCEPTION(strict mode)*** rising from:
-    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 35: object@0xa97bab0 of type 'function' in anonymous slot, function attr: [
+    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 36: object@0x2466690 of type 'function' in anonymous slot, function attr: [
         is native: false
         is inline: true
         is generator: false
@@ -108,7 +108,7 @@
         parameter: ()
         interrupt signal trap mask: 
     ]
-    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 35: object@0x5d6b480 of type 'function' in slot 'try', function attr: [
+    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 36: object@0x23d6070 of type 'function' in slot 'try', function attr: [
         is native: true
         is inline: true
         is generator: false
@@ -116,7 +116,7 @@
         parameter: ()
         interrupt signal trap mask: 
     ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 21: object@0x77570b0 of type 'function' in slot 'this', function attr: [
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 21: object@0x24594a0 of type 'function' in slot 'enter', function attr: [
         is native: false
         is inline: false
         is generator: false
@@ -124,7 +124,7 @@
         parameter: (*out)
         interrupt signal trap mask: retn | continue | break
     ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 44: object@0x7770bb0 of type 'function' in slot 'this', function attr: [
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 44: object@0x245e6f0 of type 'function' in slot 'run', function attr: [
         is native: false
         is inline: false
         is generator: false
@@ -132,7 +132,7 @@
         parameter: (*argv...)
         interrupt signal trap mask: retn | continue | break
     ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 49: object@0xa9698a0 of type 'function' in anonymous slot, function attr: [
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 49: object@0x2499d00 of type 'function' in anonymous slot, function attr: [
         is native: false
         is inline: true
         is generator: false
@@ -140,7 +140,7 @@
         parameter: ()
         interrupt signal trap mask: 
     ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 49: object@0x5d6b480 of type 'function' in slot 'try', function attr: [
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 49: object@0x23d6070 of type 'function' in slot 'try', function attr: [
         is native: true
         is inline: true
         is generator: false
@@ -148,7 +148,7 @@
         parameter: ()
         interrupt signal trap mask: 
     ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0x782e5d0 of type 'function' in anonymous slot, function attr: [
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0x245f2d0 of type 'function' in anonymous slot, function attr: [
         is native: false
         is inline: true
         is generator: false
@@ -156,7 +156,7 @@
         parameter: (*val)
         interrupt signal trap mask: 
     ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 62: object@0x782dd10 of type 'function' in slot 'this', function attr: [
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 62: object@0x2460c70 of type 'function' in slot 'each', function attr: [
         is native: true
         is inline: false
         is generator: false
@@ -164,7 +164,7 @@
         parameter: ()
         interrupt signal trap mask: retn | continue | break
     ]
-    ./main.ink: line 110: object@0x5edb450 of type 'function' in slot 'this', function attr: [
+    ./main.ink: line 110: object@0x241ff00 of type 'function' in slot 'run', function attr: [
         is native: false
         is inline: false
         is generator: false
@@ -172,7 +172,7 @@
         parameter: (*tmp_folder_path)
         interrupt signal trap mask: retn | continue | break
     ]
-    ./main.ink: line 110: object@0x782a300 of type 'function' in anonymous slot, function attr: [
+    ./main.ink: line 110: object@0x245b230 of type 'function' in anonymous slot, function attr: [
         is native: false
         is inline: true
         is generator: false
@@ -180,7 +180,7 @@
         parameter: ()
         interrupt signal trap mask: 
     ]
-    ./main.ink: line 110: object@0x5d6a850 of type 'function' in slot 'if', function attr: [
+    ./main.ink: line 110: object@0x23d5aa0 of type 'function' in slot 'if', function attr: [
         is native: true
         is inline: true
         is generator: false
@@ -188,4 +188,4 @@
         parameter: ()
         interrupt signal trap mask: 
     ]
-    <root engine>: line -1: object@0x5d14390 of type 'context' in slot 'base'
+    <root engine>: line -1: object@0x23b6120 of type 'context' in slot 'base'

@@ -17,7 +17,8 @@ namespace = {
 
 using = {
 	missing: fn (name) {
-		top[name]::(let each { | key, value |
+		top[name]::(
+			let.each { | key, value |
 			if (key != "this" && key != "base" && key != "let" && key != "each" && key != "prototype") {
 				top[key] = value
 			}

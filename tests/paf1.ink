@@ -8,7 +8,6 @@ $test_begin = fn (out) do
  * Testing Types: Function
  */
 
-
 	let sum = fn (arg...) {
 		let ret = 0
 		for (let i = 0, i < arg.size(), i++) {
@@ -26,7 +25,7 @@ $test_begin = fn (out) do
 	_.missing = fn (name) {
 		fn (args...) {
 			let ret = fn (b) {
-				b[name]() with args
+				b[name]() with args;
 			}
 			ret.missing = fn (name) {
 				let tmp_base = base
