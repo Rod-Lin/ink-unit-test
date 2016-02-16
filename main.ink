@@ -1,5 +1,6 @@
 #! /usr/bin/ink
 
+import blueprint
 import io
 import "utils/container.ink", "ui/ui.ink", "utils/engine.ink"
 
