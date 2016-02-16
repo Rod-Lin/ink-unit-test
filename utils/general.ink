@@ -1,14 +1,6 @@
 if (_GENERAL_INK_) { exit }
 _GENERAL_INK_ = 1
 
-for = inl (init, &cond, &iterate, block) {
-	block@continue = iterate;
-	while (cond()) {
-		block();
-		iterate();
-	}
-}
-
 max = fn (args...) {
 	for (let i = 1 && let max = args[0],
 		 i < args.size(), i = i + 1) {
