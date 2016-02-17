@@ -34,8 +34,8 @@ namespace UT_Engine::(
 			base.test_queue.push(test_unit);
 		}
 		this.run = fn (tmp_folder_path) {
-			let i = 1;
-			retn cast_native_array(base.test_queue.each { | val |
+			let i = 1, let failed = 0, let error = 0;
+			let ret = cast_native_array(base.test_queue.each { | val |
 				let tmp_file_name = tmp_folder_path + "/test_" + (i++)
 				let res_fp = new File(tmp_file_name, "w+");
 
@@ -45,6 +45,7 @@ namespace UT_Engine::(
 					UT_UIUtils::std_puts("test: " + val.name + " --- Error\n");
 					UT_UIUtils::std_puts("  error message: " + e.file_name + ": line " + e.lineno + ": " + e.msg + "\n");
 					file_remove(tmp_file_name)
+					error++
 					continue 0
 				}
 				ret = val.check(res_fp.read())
@@ -55,14 +56,20 @@ namespace UT_Engine::(
 					UT_UIUtils::std_puts("OK\n");
 				} else {
 					UT_UIUtils::std_puts("Failed\n");
+					failed++
 				}
 
 				file_remove(tmp_file_name)
 				ret
 			})
+			UT_UIUtils::std_puts("\n*** FINAL ***: " + (ret.size() - failed - error) + " correct, " +
+								 failed + " failed, " + error + " error\n");
+
+			ret
 		}
 		this.dry_run = fn () {
 			let i = 1;
+			UT_UIUtils::std_puts("*** collecting output ***\n")
 			cast_native_array(base.test_queue.each { | val |
 				val.run(val.res_fp)
 				ret
