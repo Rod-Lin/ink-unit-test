@@ -20,4 +20,14 @@ b.c = func
 
 a.c(b.c)
 
+$object.if = fn (cond, else, arg) {
+	if (cond) {
+		base
+	} else if (else == "else" && typename(arg) == "array") {
+		arg[-1]
+	}
+}
+
+out.putln(let if(0) else ("nop"))
+
 end

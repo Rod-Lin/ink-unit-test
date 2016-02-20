@@ -1,191 +1,30 @@
-[1;34m***NOTE***[m /home/lancelot/Desktop/ink-unit-test/tests/base1.ink: line 22: Argument(s) exceed
+[1;34m***NOTE***[m /home/lancelot/Desktop/ink-unit-test/tests/base1.ink: line 21: Argument(s) exceed
 [1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 12: Getting slot 'b' of undefined value
 ***INK EXCEPTION(strict mode)*** rising from:
-    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 18: object@0xdb2380 of type 'function' in slot 'error_func', function attr: [
-        is native: false
-        is inline: false
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: retn | continue | break
-    ]
-    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0xdb5890 of type 'function' in anonymous slot, function attr: [
-        is native: false
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: 
-    ]
-    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0xce5100 of type 'function' in slot 'try', function attr: [
-        is native: true
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: 
-    ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 21: object@0xd67b50 of type 'function' in slot 'enter', function attr: [
-        is native: false
-        is inline: false
-        is generator: false
-        is partial applied: false
-        parameter: (*out)
-        interrupt signal trap mask: retn | continue | break
-    ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 44: object@0xd6b900 of type 'function' in slot 'run', function attr: [
-        is native: false
-        is inline: false
-        is generator: false
-        is partial applied: false
-        parameter: (*argv...)
-        interrupt signal trap mask: retn | continue | break
-    ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0xddcee0 of type 'function' in anonymous slot, function attr: [
-        is native: false
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: 
-    ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0xce5100 of type 'function' in slot 'try', function attr: [
-        is native: true
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: 
-    ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 51: object@0xd7ece0 of type 'function' in anonymous slot, function attr: [
-        is native: false
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: (*val)
-        interrupt signal trap mask: 
-    ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 64: object@0xd834a0 of type 'function' in slot 'each', function attr: [
-        is native: true
-        is inline: false
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: retn | continue | break
-    ]
-    ./main.ink: line 110: object@0xd362c0 of type 'function' in slot 'run', function attr: [
-        is native: false
-        is inline: false
-        is generator: false
-        is partial applied: false
-        parameter: (*tmp_folder_path)
-        interrupt signal trap mask: retn | continue | break
-    ]
-    ./main.ink: line 110: object@0xd7c770 of type 'function' in anonymous slot, function attr: [
-        is native: false
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: 
-    ]
-    ./main.ink: line 110: object@0xce4a70 of type 'function' in slot 'if', function attr: [
-        is native: true
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: 
-    ]
-    <root engine>: line -1: object@0xcc23e0 of type 'context' in slot 'base'
+    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 18: object@0xd47a60 of type 'function' in slot 'error_func'
+    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0xd42a80 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0xc6e970 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 21: object@0xcf01f0 of type 'function' in slot 'enter'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 44: object@0xcf4c50 of type 'function' in slot 'run'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0xd28cd0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0xc6e970 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 51: object@0xd06160 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 64: object@0xd05f90 of type 'function' in slot 'each'
+    ./main.ink: line 110: object@0xcbf3e0 of type 'function' in slot 'run'
+    ./main.ink: line 110: object@0xd05ab0 of type 'function' in anonymous slot
+    ./main.ink: line 110: object@0xc6e3a0 of type 'function' in slot 'if'
+    <root engine>: line -1: object@0xc4a4b0 of type 'context' in slot 'base'
 [1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 29: Unreachable bonding detected, breaking
 ***INK EXCEPTION(strict mode)*** rising from:
-    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 36: object@0xd43fe0 of type 'function' in anonymous slot, function attr: [
-        is native: false
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: 
-    ]
-    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 36: object@0xce5100 of type 'function' in slot 'try', function attr: [
-        is native: true
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: 
-    ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 21: object@0xd75070 of type 'function' in slot 'enter', function attr: [
-        is native: false
-        is inline: false
-        is generator: false
-        is partial applied: false
-        parameter: (*out)
-        interrupt signal trap mask: retn | continue | break
-    ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 44: object@0xd819b0 of type 'function' in slot 'run', function attr: [
-        is native: false
-        is inline: false
-        is generator: false
-        is partial applied: false
-        parameter: (*argv...)
-        interrupt signal trap mask: retn | continue | break
-    ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0xd8ed80 of type 'function' in anonymous slot, function attr: [
-        is native: false
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: 
-    ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0xce5100 of type 'function' in slot 'try', function attr: [
-        is native: true
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: 
-    ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 51: object@0xd7ece0 of type 'function' in anonymous slot, function attr: [
-        is native: false
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: (*val)
-        interrupt signal trap mask: 
-    ]
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 64: object@0xd834a0 of type 'function' in slot 'each', function attr: [
-        is native: true
-        is inline: false
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: retn | continue | break
-    ]
-    ./main.ink: line 110: object@0xd362c0 of type 'function' in slot 'run', function attr: [
-        is native: false
-        is inline: false
-        is generator: false
-        is partial applied: false
-        parameter: (*tmp_folder_path)
-        interrupt signal trap mask: retn | continue | break
-    ]
-    ./main.ink: line 110: object@0xd7c770 of type 'function' in anonymous slot, function attr: [
-        is native: false
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: 
-    ]
-    ./main.ink: line 110: object@0xce4a70 of type 'function' in slot 'if', function attr: [
-        is native: true
-        is inline: true
-        is generator: false
-        is partial applied: false
-        parameter: ()
-        interrupt signal trap mask: 
-    ]
-    <root engine>: line -1: object@0xcc23e0 of type 'context' in slot 'base'
+    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 36: object@0xd1e080 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 36: object@0xc6e970 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 21: object@0xcfe0d0 of type 'function' in slot 'enter'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 44: object@0xd0a180 of type 'function' in slot 'run'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0xd01b20 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0xc6e970 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 51: object@0xd06160 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 64: object@0xd05f90 of type 'function' in slot 'each'
+    ./main.ink: line 110: object@0xcbf3e0 of type 'function' in slot 'run'
+    ./main.ink: line 110: object@0xd05ab0 of type 'function' in anonymous slot
+    ./main.ink: line 110: object@0xc6e3a0 of type 'function' in slot 'if'
+    <root engine>: line -1: object@0xc4a4b0 of type 'context' in slot 'base'
