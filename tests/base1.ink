@@ -28,6 +28,8 @@ $object.if = fn (cond, else, arg) {
 	}
 }
 
-out.putln(let if(0) else ("nop"))
+out.putln("NO!!!" if(0) else ("nop"))
+
+delete $object.if
 
 end
