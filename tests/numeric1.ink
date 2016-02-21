@@ -32,6 +32,12 @@ $test_begin = fn (out) do
 	res.push (-a)
 	res.push (-b)
 
+	res.push (-1 << 1)
+	res.push (-1 >> 1)
+	res.push (-1 << 4)
+	res.push (100 >> 5)
+	res.push (100 << 5)
+
 	res.push (g)
 	res.push (h)
 	res.push (i)
