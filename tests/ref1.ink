@@ -12,7 +12,7 @@ let f1 = fn (&a) {
 	a() = "yes"
 }
 
-delete abcd
+delete let abcd
 f1(let abcd)
 out.putln(abcd)
 
