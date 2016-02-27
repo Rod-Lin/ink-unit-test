@@ -1,0 +1,308 @@
+3
+from block, 3
+from block2, 
+false!!!
+result: 2
+hello, world
+new!!!!array
+new2!!!!function
+11
+**************************************
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+**************************************
+0
+1
+2
+3
+4
+I'm retning
+1
+0
+a = 10.1
+a > 10
+a >= 10
+a != 10
+10
+I'm default. I'm default, too.
+1
+size: 3
+first: 10
+second
+=================Function Rebuild===================
+first:  haha
+second
+0.6
+10
+[PRODUCER] Producing 1...
+[CONSUMER] Consuming 1...
+[PRODUCER] Consumer return: 200 OK
+[PRODUCER] Producing 2...
+[CONSUMER] Consuming 2...
+[PRODUCER] Consumer return: 200 OK
+[PRODUCER] Producing 3...
+[CONSUMER] Consuming 3...
+[PRODUCER] Consumer return: 200 OK
+[PRODUCER] Producing 4...
+[CONSUMER] Consuming 4...
+[PRODUCER] Consumer return: 200 OK
+[PRODUCER] Producing 5...
+[CONSUMER] Consuming 5...
+[PRODUCER] Consumer return: 200 OK
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+**********************************************************
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+**********************************************************
+hello~~~
+hello~~~~
+hello~~~~~
+hello~~~~~~
+hello~~~~~~~
+hello~~~~~~~~
+hello~~~~~~~~~
+hello~~~~~~~~~~
+hello~~~~~~~~~~~
+hello~~~~~~~~~~~~
+10
+20
+10
+10
+10
+12
+I'm package loader!! -- the 1th time
+I'm package loader!! -- the 2th time
+I'm package loader!! -- the 3th time
+1
+3
+5
+7
+9
+end!
+12
+readonly!!
+12
+hello, world
+10
+###################################
+10
+20
+###################################
+b = value of type "numeric"
+wow
+haha, no
+10
+3
+######################
+36
+36
+10
+10
+################ drop signal test ################
+returning 10
+previous return value: 10
+override to 100
+previous return value: 100
+I'm NOT overriding to 1000
+final value(100?): 10
+undefined
+{"hello?": "wow!", "haha": "eh..", "yes": ["I'm elem1", "I'm elem2"], "I shouldn\'t appear": {}, "is it null?": null}
+"this is a string"
+null
+-10.1
+{"hello?": "wow!", "haha": "eh..", "yes": ["I'm elem1", "I'm elem2"], "I shouldn't appear": {}, "is it null?": null}
+{"glossary": {"title": "example glossary", "GlossDiv": {"title": "S", "GlossList": {"GlossEntry": {"ID": "SGML", "SortAs": "SGML", "GlossTerm": "Standard Generalized Markup Language", "Acronym": "SGML", "Abbrev": "ISO 8879:1986", "GlossDef": {"para": "A meta-markup language, used to create markup languages such as DocBook.", "GlossSeeAlso": ["GML", "XML"]}, "GlossSee": "markup"}}}}}
+""\n""
+cannot turn myself to string
+1
+yes!!
+cond3 is true
+cond1 is not true while cond3 is true
+cond is 10
+default: cond is 10
+all ended
+undefined
+haha, it's been changed
+undefined
+30
+hello
+changed again!!
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+function
+function
+haha
+function
+function
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+received: I'm text
+I'm text
+################ actor test ################
+function
+haha
+undefined
+no message received in 0.8 sec
+undefined
+undefined
+1321323213000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001321323213.624646264264266
+180
+####################### BIG NUM #######################
+426.44
+213.02
+-213.42
+21323.02
+-42.644
+-106.60717162120
+-.00234505799373711
+-.15459179409953864796107427308486711645016682560785238113832519751091416228465333744107100948044994693
+-inf
+1.0000000000000000
+.0000000000000000
+1.0000000000000000
+1.0000000000000000
+.0000000000000000
+7.740
+4
+20
+HaHa, I dont't want to tell you
+no!! John
+no!! Nick
+no!! My Dear Teacher
+Yes, of course
+No, I can't play basketball
+Yes I can play football
+Yes I can play badminton
+HELL NO!!
+HELL NO!!
+Yes you can have my pencil
+No, I'm afraid I can't lend you my homework
+182 1589 9452
+######################## namespace ########################
+I'm inside namespace
+I'm inside namespace
+hi
+yes!!
+origin
+20
+hello
+ha
+######## ruby-like function definition ########
+amazing!! --Rod
+null
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+1
+0
+################ try/catch test ################
+Error Message: Getting slot 'b' of undefined value
+a = origin
+finally!!
+a = right!!!
+1
+exactly!!!
+##################### children of core dir #####################
+file: ..
+file: ui.ink
+file: .
+11
+from each: 1
+from each: 2
+from each: 3
+when x = 0, formular1 = 1
+when x = 1, formular1 = 3
+when x = 2, formular1 = 5
+when x = 3, formular1 = 7
+when x = 4, formular1 = 9
+when x = 5, formular1 = 11
+when x = 6, formular1 = 13
+when x = 7, formular1 = 15
+when x = 8, formular1 = 17
+when x = 9, formular1 = 19
+123
+32434
+this is a
+this is b
+10
+hi
+hello signal, value = 132
+continue!!
+yes received
+exiting!!
+not end!!
+20
+a is called with 1 argument(s)
+true body
+10
+assign event!
+10
+wow
+11
+1
+10
+a = first
+b = second
+c = third
+a = first after reverse
+b = second after reverse
+yes

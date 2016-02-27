@@ -7,7 +7,15 @@ import "../utils/general.ink"
 import "../ui/ui.ink"
 
 `$io.file.File`.putln = fn (str) {
-	base.puts(str.to_str() + "\n");
+	let s = ""
+	if (str == undefined) {
+		s = "undefined"
+	} else if (str == null) {
+		s = "null"
+	} else {
+		s = str.to_str()
+	}
+	base.puts(s + "\n");
 }
 
 namespace UT_Engine::(
