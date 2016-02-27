@@ -1,30 +1,30 @@
 [1;34m***NOTE***[m /home/lancelot/Desktop/ink-unit-test/tests/base1.ink: line 21: Argument(s) exceed
 [1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 12: Getting slot 'b' of undefined value
 ***INK EXCEPTION(strict mode)*** rising from:
-    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 18: object@0x1be61c0 of type 'function' in slot 'error_func'
-    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0x1be7820 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0x1afa480 of type 'function' in slot 'try'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 21: object@0x1b81830 of type 'function' in slot 'enter'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 44: object@0x1b866e0 of type 'function' in slot 'run'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0x1bd0760 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0x1afa480 of type 'function' in slot 'try'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 51: object@0x1b99220 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 64: object@0x1b94b80 of type 'function' in slot 'each'
-    ./main.ink: line 110: object@0x1b4b750 of type 'function' in slot 'run'
-    ./main.ink: line 110: object@0x1ba29c0 of type 'function' in anonymous slot
-    ./main.ink: line 110: object@0x1af9eb0 of type 'function' in slot 'if'
-    <root engine>: line -1: object@0x1ad4a00 of type 'context' in slot 'base'
+    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 18: object@0x848310 of type 'function' in slot 'error_func'
+    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0x849970 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0x752b40 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 21: object@0x7e32b0 of type 'function' in slot 'enter'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 44: object@0x7e7d40 of type 'function' in slot 'run'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0x832840 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0x752b40 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 51: object@0x7faea0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 64: object@0x7fcb40 of type 'function' in slot 'each'
+    ./main.ink: line 110: object@0x7a5380 of type 'function' in slot 'run'
+    ./main.ink: line 110: object@0x7fe3d0 of type 'function' in anonymous slot
+    ./main.ink: line 110: object@0x752570 of type 'function' in slot 'if'
+    <root engine>: line -1: object@0x72cd40 of type 'context' in slot 'base'
 [1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 29: Unreachable bonding detected, breaking
 ***INK EXCEPTION(strict mode)*** rising from:
-    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 36: object@0x1bb3300 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 36: object@0x1afa480 of type 'function' in slot 'try'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 21: object@0x1b91130 of type 'function' in slot 'enter'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 44: object@0x1b9d220 of type 'function' in slot 'run'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0x1b9f570 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0x1afa480 of type 'function' in slot 'try'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 51: object@0x1b99220 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 64: object@0x1b94b80 of type 'function' in slot 'each'
-    ./main.ink: line 110: object@0x1b4b750 of type 'function' in slot 'run'
-    ./main.ink: line 110: object@0x1ba29c0 of type 'function' in anonymous slot
-    ./main.ink: line 110: object@0x1af9eb0 of type 'function' in slot 'if'
-    <root engine>: line -1: object@0x1ad4a00 of type 'context' in slot 'base'
+    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 36: object@0x813fa0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 36: object@0x752b40 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 21: object@0x7f2670 of type 'function' in slot 'enter'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 44: object@0x7fef90 of type 'function' in slot 'run'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0x7f65f0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 50: object@0x752b40 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 51: object@0x7faea0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 64: object@0x7fcb40 of type 'function' in slot 'each'
+    ./main.ink: line 110: object@0x7a5380 of type 'function' in slot 'run'
+    ./main.ink: line 110: object@0x7fe3d0 of type 'function' in anonymous slot
+    ./main.ink: line 110: object@0x752570 of type 'function' in slot 'if'
+    <root engine>: line -1: object@0x72cd40 of type 'context' in slot 'base'
