@@ -22,6 +22,11 @@ $test_begin = fn (out) do
 	let i = 4E-10
 	let j = 5e+10
 
+	let k = 0b101010101
+	let l = 0b01010101
+	let m = 0b010101010
+	let n = 0b00000000
+
 	let res = new Array();
 
 	res.push (a + b)
@@ -42,6 +47,13 @@ $test_begin = fn (out) do
 	res.push (h)
 	res.push (i)
 	res.push (j)
+
+	res.push (k | l)
+	res.push (k | m)
+	res.push (k & l)
+	res.push (k & n)
+	res.push (k ^ m)
+	res.push (k ^ n)
 
 	res.push (c.ceil())
 	res.push (d.floor())
