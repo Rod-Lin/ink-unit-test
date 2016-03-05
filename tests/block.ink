@@ -1678,4 +1678,53 @@ p(abcd)
 
 engine.errmode = errmode_back
 
+"123:23:ssd323".split(":").each { | val |
+	p(val);
+}
+
+"123".split(":").each(out.putln(_))
+"::2".split("::").each(out.putln(_))
+"".split("::").each(out.putln(_))
+
+let `[]` = fn (arr) {
+	p("called!!")
+	let ret = "["
+	for (let i = 0, i < arr.size(), i++) {
+		if (ret != "[") {
+			ret += ", "
+		}
+		ret += arr[i]
+	}
+	ret += "]"
+}
+
+p([1, 2, 3, "s"])
+
+delete `[]`
+
+let `{}` = fn (obj) {
+	p("called!!!")
+	let ret = "{"
+	obj.each { | k, v |
+		if (ret != "{") {
+			ret += ", "
+		}
+		ret += "\"" + k + "\": " + v
+	}
+	ret += "}"
+}
+
+p({a: 10, b: 20, c: "haha"})
+
+delete `{}`
+
+default_arg = fn (a, b) {
+	a ||= "yes!!"
+	b ||= "default"
+
+	p(a + " and " + b)
+}
+
+default_arg(undefined, "yes!!")
+
 end
