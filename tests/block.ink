@@ -1389,9 +1389,9 @@ if (dir.exist()) {
 rmdir("new_dir");
 
 p("##################### children of core dir #####################");
-(new Directory("ui")).each("file: " + _).each { | val |
-	p(val);
-}
+//(new Directory("ui")).each("file: " + _).each { | val |
+//	p(val);
+//}
 
 _.missing = fn (name) {
 	fn (args...) {

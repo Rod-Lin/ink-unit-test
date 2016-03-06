@@ -262,9 +262,6 @@ a = right!!!
 1
 exactly!!!
 ##################### children of core dir #####################
-file: ..
-file: ui.ink
-file: .
 11
 from each: 1
 from each: 2
