@@ -44,7 +44,7 @@ if (!test_dir.exist()) {
 }
 
 @exit = fn (v) {
-	if (tmp_dir.exist()) {
+	if (tmp_dir.exist() && !is_debug) {
 		tmp_dir.remove();
 	}
 	exit

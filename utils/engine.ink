@@ -6,7 +6,7 @@ import "../utils/container.ink"
 import "../utils/general.ink"
 import "../ui/ui.ink"
 
-`$io.file.File`.putln = fn (str) {
+$file.putln = fn (str) {
 	let s = ""
 	if (str == undefined) {
 		s = "undefined"
@@ -67,7 +67,7 @@ namespace UT_Engine::(
 					failed++
 				}
 
-				file_remove(tmp_file_name)
+				// file_remove(tmp_file_name)
 				ret
 			})
 			UT_UIUtils::std_puts("\n*** FINAL ***: " + (ret.size() - failed - error) + " correct, " +

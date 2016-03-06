@@ -594,7 +594,7 @@ obj = {
 delete obj.hello?
 p(obj.hello?);
 
-//import json
+import json
 
 p(json.encode(
 {
