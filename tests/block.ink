@@ -1731,4 +1731,11 @@ default_arg(undefined, "yes!!")
 (new Array() + [2, 3, 4]).each(out.putln(_))
 (new Array(5) + [2, 3]).each(out.putln(_))
 
+([2, 3][0, 1]).each(out.putln(_))
+([2, 3][0, 0]).each(out.putln(_))
+([2, 3, 4][0, -1]).each(out.putln(_))
+((new Array(10))[0, -1]).each(out.putln(_))
+([1, 2, 3, 4][1, 0]).each(out.putln(_))
+([1, 2, 3, 4][-1, 0]).each(out.putln(_))
+
 end
