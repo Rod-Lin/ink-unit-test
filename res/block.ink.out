@@ -296,7 +296,7 @@ assign event!
 wow
 11
 1
-10
+undefined
 a = first
 b = second
 c = third

@@ -8,6 +8,8 @@ $test_begin = fn (out) do
  * Testing Types: Object
  */
 
+retn
+
 let $no_proto_object = clone $object
 delete $no_proto_object.prototype
 
