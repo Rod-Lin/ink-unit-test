@@ -1738,4 +1738,26 @@ default_arg(undefined, "yes!!")
 ([1, 2, 3, 4][1, 0]).each(out.putln(_))
 ([1, 2, 3, 4][-1, 0]).each(out.putln(_))
 
+fix FIXED_NUM = 10
+fix FIXED_STR = "I'm fixed string, and this is fixed num: "
+
+try {
+	fix FIXED_NUM = 20
+} catch { | e |
+	out.putln(e.msg)
+}
+
+try {
+	fix INVALID_FIXED = { a: 1 }
+} catch { | e |
+	out.putln(e.msg)
+}
+
+p(FIXED_STR + FIXED_NUM)
+p(fix INVALID_FIXED)
+
+fix INVALID_FIXED = 10
+
+p(fix INVALID_FIXED)
+
 end

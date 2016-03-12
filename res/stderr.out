@@ -1,43 +1,43 @@
-INK_DEBUG: object@0x173aa10 of type 'string' in slot 'base' {
-    'size': [ has getter and setter ] object@0x1645090 of type 'numeric' in slot 'size' {
+INK_DEBUG: object@0x1ced0c0 of type 'string' in slot 'base' {
+    'size': [ has getter and setter ] object@0x1cf4a60 of type 'numeric' in slot 'size' {
         (empty)
     }
     'getter': object@(nil) of type 'unpointed' in anonymous slot
     'setter': object@(nil) of type 'unpointed' in anonymous slot
 }
 INK_DEBUG: rising from:
-    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 522: object@0x15ded80 of type 'function' in slot 'where'
-    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 525: object@0x1743f90 of type 'function' in slot 'a'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 29: object@0x16c2ad0 of type 'function' in slot 'base'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 52: object@0x16fa3e0 of type 'function' in slot 'run'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x17277b0 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x15e3430 of type 'function' in slot 'try'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 59: object@0x162a8c0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 522: object@0x1b8d080 of type 'function' in slot 'where'
+    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 525: object@0x1cfb8b0 of type 'function' in slot 'a'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 29: object@0x1c73790 of type 'function' in slot 'base'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 52: object@0x1cad0a0 of type 'function' in slot 'run'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x1bdbed0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x1b91730 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 59: object@0x1bd8d50 of type 'function' in anonymous slot
     ... (set --max-trace=<value greater than 7>)
-INK_DEBUG: object@0x1718e90 of type 'function' in slot 'p' {
+INK_DEBUG: object@0x1bf75f0 of type 'function' in slot 'p' {
     'a': object@(nil) of type 'unpointed' in anonymous slot
 }
-INK_DEBUG: object@0x1750860 of type 'object' in anonymous slot {
-    'hi': object@0x1750e00 of type 'string' in slot 'hi' {
+INK_DEBUG: object@0x1d00a70 of type 'object' in anonymous slot {
+    'hi': object@0x1d01010 of type 'string' in slot 'hi' {
         (empty)
     }
-    'a': object@0x1749cd0 of type 'string' in slot 'a' {
-        (empty)
-    }
-}
-INK_DEBUG: object@0x17496b0 of type 'object' in anonymous slot {
-    'hi': object@0x17290c0 of type 'null' in slot 'hi' {
+    'a': object@0x1cf9f00 of type 'string' in slot 'a' {
         (empty)
     }
 }
-INK_DEBUG: object@0x173e4f0 of type 'array' in anonymous slot {
-    [0]: object@0x1645110 of type 'string' in anonymous slot {
+INK_DEBUG: object@0x1cf97d0 of type 'object' in anonymous slot {
+    'hi': object@0x1cf2a40 of type 'null' in slot 'hi' {
+        (empty)
+    }
+}
+INK_DEBUG: object@0x1ce9930 of type 'array' in anonymous slot {
+    [0]: object@0x1bfd930 of type 'string' in anonymous slot {
         (empty)
     }
     (empty)
 }
-INK_DEBUG: object@0x1744be0 of type 'array' in anonymous slot {
-    [0]: object@0x173ac20 of type 'string' in anonymous slot {
+INK_DEBUG: object@0x1cf4df0 of type 'array' in anonymous slot {
+    [0]: object@0x1ced790 of type 'string' in anonymous slot {
         (empty)
     }
     (empty)
@@ -57,36 +57,56 @@ INK_DEBUG: object@0x1744be0 of type 'array' in anonymous slot {
 [1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1322: Divided by zero
 [1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1362: Getting slot 'b' of undefined value
 ***INK EXCEPTION(strict mode)*** rising from:
-    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1368: object@0x17554b0 of type 'function' in slot 'error_func'
-    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1377: object@0x1756310 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1377: object@0x15e3430 of type 'function' in slot 'try'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 29: object@0x16c2ad0 of type 'function' in slot 'base'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 52: object@0x16fa3e0 of type 'function' in slot 'run'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x17277b0 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x15e3430 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1368: object@0x1d0a720 of type 'function' in slot 'error_func'
+    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1377: object@0x1d0ba70 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1377: object@0x1b91730 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 29: object@0x1c73790 of type 'function' in slot 'base'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 52: object@0x1cad0a0 of type 'function' in slot 'run'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x1bdbed0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x1b91730 of type 'function' in slot 'try'
     ... (set --max-trace=<value greater than 7>)
 [1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1612: Circular prototype reference detected
 [1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1612: Circular prototype reference detected
 [1;34m***NOTE***[m /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1738: The first argument 1(start index) is greater than the second argument 0(end index) in slice function(swap them in default)
 [1;34m***NOTE***[m /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1739: The first argument 3(start index) is greater than the second argument 0(end index) in slice function(swap them in default)
+[1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1746: Assigning unassignable expression
+***INK EXCEPTION(strict mode)*** rising from:
+    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1748: object@0x1ce9fc0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1748: object@0x1b91730 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 29: object@0x1c73790 of type 'function' in slot 'base'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 52: object@0x1cad0a0 of type 'function' in slot 'run'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x1bdbed0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x1b91730 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 59: object@0x1bd8d50 of type 'function' in anonymous slot
+    ... (set --max-trace=<value greater than 7>)
+[1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1752: Failed to get constant value of object of type <object>
+***INK EXCEPTION(strict mode)*** rising from:
+    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1752: object@0x1d0d130 of type 'function' in slot '='
+    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1754: object@0x1d02830 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/tests/block.ink: line 1754: object@0x1b91730 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 29: object@0x1c73790 of type 'function' in slot 'base'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 52: object@0x1cad0a0 of type 'function' in slot 'run'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x1bdbed0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x1b91730 of type 'function' in slot 'try'
+    ... (set --max-trace=<value greater than 7>)
 [1;34m***NOTE***[m /home/lancelot/Desktop/ink-unit-test/tests/base1.ink: line 21: Argument(s) exceed
 [1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 12: Getting slot 'b' of undefined value
 ***INK EXCEPTION(strict mode)*** rising from:
-    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 18: object@0x17be900 of type 'function' in slot 'error_func'
-    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0x179c8b0 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0x15e3430 of type 'function' in slot 'try'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 29: object@0x16ff810 of type 'function' in slot 'enter'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 52: object@0x1719190 of type 'function' in slot 'run'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x17d2b00 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x15e3430 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 18: object@0x316f740 of type 'function' in slot 'error_func'
+    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0x314d6f0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/tests/error1.ink: line 28: object@0x1b91730 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 29: object@0x1cb2410 of type 'function' in slot 'enter'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 52: object@0x1ccbdb0 of type 'function' in slot 'run'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x3183940 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x1b91730 of type 'function' in slot 'try'
     ... (set --max-trace=<value greater than 7>)
 [1;33m***WARNING***[m /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 38: Unreachable bonding detected, breaking
 ***INK EXCEPTION(strict mode)*** rising from:
-    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 38: object@0x15e3430 of type 'function' in slot 'try'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 29: object@0x171dc30 of type 'function' in slot 'enter'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 52: object@0x1730900 of type 'function' in slot 'run'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x16451f0 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x15e3430 of type 'function' in slot 'try'
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 59: object@0x162a8c0 of type 'function' in anonymous slot
-    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 72: object@0x16321c0 of type 'function' in slot 'each'
+    /home/lancelot/Desktop/ink-unit-test/tests/bond1.ink: line 38: object@0x1b91730 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 29: object@0x1cdd310 of type 'function' in slot 'enter'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 52: object@0x1ce3570 of type 'function' in slot 'run'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x1d03da0 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 58: object@0x1b91730 of type 'function' in slot 'try'
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 59: object@0x1bd8d50 of type 'function' in anonymous slot
+    /home/lancelot/Desktop/ink-unit-test/utils/engine.ink: line 72: object@0x1bbb840 of type 'function' in slot 'each'
     ... (set --max-trace=<value greater than 7>)
