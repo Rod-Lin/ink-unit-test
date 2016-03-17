@@ -1760,4 +1760,13 @@ fix INVALID_FIXED = 10
 
 p(fix INVALID_FIXED)
 
+a = 10
+delete a
+fix a = 20
+a = 10
+p(delete a)
+a = 30
+
+p(a)
+
 end

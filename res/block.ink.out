@@ -339,6 +339,9 @@ yes!! and yes!!
 3
 4
 Assigning fixed value 'FIXED_NUM'
+Failed to get constant value of object of type <object>
 I'm fixed string, and this is fixed num: 10
 undefined
 10
+20
+30
