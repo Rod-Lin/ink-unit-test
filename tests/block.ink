@@ -1676,8 +1676,6 @@ test_f = fn (&a) {
 test_f(abcd)
 p(abcd)
 
-engine.errmode = errmode_back
-
 "123:23:ssd323".split(":").each { | val |
 	p(val);
 }
@@ -1768,5 +1766,7 @@ p(delete a)
 a = 30
 
 p(a)
+
+engine.errmode = errmode_back
 
 end
