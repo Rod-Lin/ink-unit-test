@@ -61,7 +61,7 @@ func = fn (a, b) {
 
 range = fn () {
 	this.range = fn () {
-		retn new Array(new Array(1, 2), new Array(5, 6));
+		retn new Array([1, 2], [5, 6]);
 	};
 };
 p("new!!!!" + typename(new Array("wwww", "aaaa")));

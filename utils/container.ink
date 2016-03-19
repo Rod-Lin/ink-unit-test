@@ -5,7 +5,7 @@ import "general.ink"
 
 __Array = Array
 ExArray = fn (args...) {
-	this = new __Array(args);
+	this = new __Array() with args
 	this.indexOf = fn (a) {
 		for (let i = 0, i < base.size(), i = i + 1) {
 			if (base[i] == a) {

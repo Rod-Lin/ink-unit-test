@@ -111,7 +111,15 @@ readonly!!
 hello, world
 10
 ###################################
-10
+20
+20
+20
+20
+20
+20
+20
+20
+20
 20
 ###################################
 b = value of type "numeric"
@@ -322,7 +330,11 @@ yes!! and yes!!
 2
 3
 4
-5
+undefined
+undefined
+undefined
+undefined
+undefined
 2
 3
 2
@@ -331,7 +343,16 @@ yes!! and yes!!
 2
 3
 4
-10
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
 1
 2
 1
