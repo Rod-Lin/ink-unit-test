@@ -1591,7 +1591,6 @@ a = 10
 p(a);
 
 f = inl
-	:
 	^[all]
 	&[default]
 	&[throw]
