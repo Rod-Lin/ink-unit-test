@@ -1774,4 +1774,20 @@ try {
 
 engine.errmode = errmode_back
 
+10.times(1 + _).slice(,, 1).each(out.putln(_))
+10.times(1 + _).slice(,, 2).each(out.putln(_))
+10.times(1 + _).slice(,, -1).each(out.putln(_))
+10.times(1 + _).slice(,, -2).each(out.putln(_))
+10.times(1 + _).slice(,, -100).each(out.putln(_))
+10.times(1 + _).slice(,, 100).each(out.putln(_))
+
+a = fn (a,b,c,d,e,f) { p(a); p(b); p(c); p(d); p(e); p(f) }
+a(,
+	,
+2
+,
+4,
+	,
+	)
+
 end
